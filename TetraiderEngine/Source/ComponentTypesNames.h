@@ -1,0 +1,76 @@
+/* Start Header -------------------------------------------------------
+Copyright (C) 2018 DigiPen Institute of Technology.
+Reproduction or disclosure of this file or its contents without the prior
+written consent of DigiPen Institute of Technology is prohibited.
+Author: <Holden Profit>
+- End Header --------------------------------------------------------*/
+
+/*
+All component types are listed here. These are component names that will be 
+turned into entries within the ComponentType enum
+*/ 
+
+REGISTER_COMPONENT_TYPE(C_Transform)
+
+// Rendering Components
+REGISTER_COMPONENT_TYPE(C_FBOSprite)
+REGISTER_COMPONENT_TYPE(C_Sprite)
+REGISTER_COMPONENT_TYPE(C_ParticleEmitter)
+REGISTER_COMPONENT_TYPE(C_ParticleEmitterResizer)
+REGISTER_COMPONENT_TYPE(C_Text)
+REGISTER_COMPONENT_TYPE(C_Animation)
+REGISTER_COMPONENT_TYPE(C_LetterBox)
+REGISTER_COMPONENT_TYPE(C_Camera)
+
+REGISTER_COMPONENT_TYPE(C_ScreenWrap)
+REGISTER_COMPONENT_TYPE(C_SizeToScreen)
+REGISTER_COMPONENT_TYPE(C_CamFollow)
+REGISTER_COMPONENT_TYPE(C_FollowCamera)
+REGISTER_COMPONENT_TYPE(C_SnapToCamera)
+
+REGISTER_COMPONENT_TYPE(C_Controller)
+REGISTER_COMPONENT_TYPE(C_Body)
+REGISTER_COMPONENT_TYPE(C_Health)
+REGISTER_COMPONENT_TYPE(C_FlashOnTakeDamage)
+REGISTER_COMPONENT_TYPE(C_Projectile)
+REGISTER_COMPONENT_TYPE(C_Weapon)
+REGISTER_COMPONENT_TYPE(C_Audio)
+REGISTER_COMPONENT_TYPE(C_NPCCONTROLLER)
+REGISTER_COMPONENT_TYPE(C_DestroyOnHealthZero)
+REGISTER_COMPONENT_TYPE(C_DealDamageOnCollision)
+REGISTER_COMPONENT_TYPE(C_ProjectileSpawner)
+REGISTER_COMPONENT_TYPE(C_ScaleByHPStamina)
+REGISTER_COMPONENT_TYPE(C_Stamina)
+REGISTER_COMPONENT_TYPE(C_Collectible)
+REGISTER_COMPONENT_TYPE(C_WaveMovement)
+REGISTER_COMPONENT_TYPE(C_StraightLineMovement)
+REGISTER_COMPONENT_TYPE(C_SpawnOnHealthZero)
+REGISTER_COMPONENT_TYPE(C_FollowCursor)
+REGISTER_COMPONENT_TYPE(C_Button)
+REGISTER_COMPONENT_TYPE(C_LevelStatus)
+REGISTER_COMPONENT_TYPE(C_EggCounter)
+REGISTER_COMPONENT_TYPE(C_PauseMenu)
+REGISTER_COMPONENT_TYPE(C_Microphone)
+REGISTER_COMPONENT_TYPE(C_UICounter)
+REGISTER_COMPONENT_TYPE(C_ScriptedAnimation)
+REGISTER_COMPONENT_TYPE(C_WinMessage)
+REGISTER_COMPONENT_TYPE(C_Canvas)
+REGISTER_COMPONENT_TYPE(C_Slider)
+REGISTER_COMPONENT_TYPE(C_Endpoints)
+REGISTER_COMPONENT_TYPE(C_PowerUpButton)
+REGISTER_COMPONENT_TYPE(C_Shop)
+REGISTER_COMPONENT_TYPE(C_NotEngouhGoldFeathers)
+REGISTER_COMPONENT_TYPE(C_Gate)
+REGISTER_COMPONENT_TYPE(C_GateTriggerBox)
+REGISTER_COMPONENT_TYPE(C_Cutscene)
+REGISTER_COMPONENT_TYPE(C_HillNodes)
+REGISTER_COMPONENT_TYPE(C_Spawner)
+REGISTER_COMPONENT_TYPE(C_TimeToLive)
+REGISTER_COMPONENT_TYPE(C_ApplyTintOnDifficultyUp)
+REGISTER_COMPONENT_TYPE(C_SplashScreen)
+REGISTER_COMPONENT_TYPE(C_SelectableButton)
+REGISTER_COMPONENT_TYPE(C_ListSelector)
+REGISTER_COMPONENT_TYPE(C_InGameCredits)
+
+// Light Components
+REGISTER_COMPONENT_TYPE(C_PointLight)

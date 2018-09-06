@@ -1,0 +1,359 @@
+{
+	"GAME_SETTINGS": {
+		"deploymentMode": "release",
+		"assetDirectory": {
+			"debug": "../TetraiderEngine/Assets/",
+			"release": "Assets/"
+		},
+		"levelFilesDir": "Metadata/Levels/",
+		"prefabsDir": "Metadata/Prefabs/",
+		"roomFilesDir": "Metadata/Rooms/",
+		"sfxDir": "SFX/",
+		"shadersDir": "Shaders/",
+		"texturesDir": "Textures/",
+		"fontsDir": "Fonts/",
+		
+		"powerUpSettings": "Metadata/powerUpSettings.json",
+		
+		"isDebugModeEnabled": false,
+		"soundsMute": false
+	},
+	"RENDER_SETTINGS": {
+		"enableWindowsCursor": false,
+		
+		"debugShader": "lineShader",
+		"baseShader": "fboRenderer",
+		"gaussianHorizontalShader": "gaussianBlurHorizontal",
+		"gaussianVerticalShader": "gaussianBlurVertical",
+		"maskShader": "maskShader",
+		"miniMapShader": "miniMapShader",
+		"miniMapFinalShader": "miniMapFinalShader",
+		
+		"consoleEnabled": false,
+		"globalAmbient": { "r":0.2, "g":0.2, "b":0.2, "a":1 },
+		"postProcessingEnabled": false
+	},
+	"SHADERS": [
+		"fboRenderer",
+		"glowShader",
+		"default",
+		"gaussianBlurHorizontal",
+		"gaussianBlurVertical",
+		"lineShader",
+		"particleShader",
+		"maskShader",
+		"miniMapShader",
+		"miniMapFinalShader"
+	],
+	"WINDOW_SETTINGS": {
+		"title" : "Eggnapped",
+		"resolutions": [
+			{
+				"width": 1280,
+				"height": 720
+			},
+			{
+				"width": 1536,
+				"height": 864
+			},
+			{
+				"width": 1600,
+				"height": 900
+			},
+			{
+				"width": 1920,
+				"height": 1080
+			}
+		],
+		"defaultResolution": 3,
+		"startInFullscreen": true
+	},
+	"ROOM_SETTINGS": {
+		"cellWidth": 128,
+		"cellHeight": 64,
+		"roomWidth": 12,
+		"roomHeight": 16
+	},
+	"LEVEL_SETTINGS": {
+		"isRandomGenerated": false,
+		"Statics": "StaticObjects",
+		"LetterBoxObjects": "LetterBoxObjects",
+		"Start": 5,
+		"MainMenu": 1,
+		"Levels": [
+			{ "Name": "LVL_Editor" },
+			{ "Name": "LVL_Menu" },
+			{ "Name": "LVL_BossTest2" },
+			{ "Name": "LVL_PowerUpScreen" },
+			{ "Name": "LVL_CutScene" },
+			{ "Name": "LVL_DigiPenLogo" },
+			{ "Name": "LVL_TetraidersLogo" },
+			{ "Name": "LVL_CreditsScreen" },
+			{ "Name": "LVL_OutroScene" },
+			{ "Name": "LVL_ThanksForPlaying" }
+		],
+		"LevelParameters": [
+			{"cols": 3, "rows": 4, "difficulty": 1, "boss": false, "shop": false, "eggsToCollect": 3},
+			{"cols": 4, "rows": 4, "difficulty": 2, "boss": true, "shop": true, "eggsToCollect": 4},
+			{"cols": 4, "rows": 4, "difficulty": 3, "boss": false, "shop": true, "eggsToCollect": 3},
+			{"cols": 5, "rows": 4, "difficulty": 4, "boss": true, "shop": true, "eggsToCollect": 4}
+		],
+		"UseSeeds": true,
+		"Seeds": {
+			"1": [
+			1524087021,
+			1524087316,
+			1523909643,
+			1523910109,
+			1524199737
+			],
+			"2": [
+			1524085768,
+			1524087660,
+			1524200242
+			],
+			"3": [
+			1524086005,
+			1524200784,
+			1524202169,
+			1524202384
+			],
+			"4": [
+			1524086218,
+			1524201063,
+			1524202913
+			]
+		}
+	},
+	"INPUT_SETTINGS": [
+		{
+			"Name": "Move",
+			"EventType": 1,
+			"InputType": 1,
+			"isMouse": false,
+			"isJoystick": true,
+			"KeyBoardKeyPosX": 7,
+			"KeyBoardKeyNegX": 4,
+			"KeyBoardKeyPosY": 26,
+			"KeyBoardKeyNegY": 22,
+			"AnalogueStick": 0
+		},
+		{
+			"Name": "Aim",
+			"EventType": 2,
+			"InputType": 2,
+			"isJoystick": true,
+			"AnalogueStick": 1
+		},
+		{
+			"Name": "Fly",
+			"EventType": 3,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": true,
+			"KeyBoardKey": 44,
+			"XboxKey": 0
+		},
+		{
+			"Name": "Melee",
+			"EventType": 4,
+			"InputType": 0,
+			"isMouse": true,
+			"isJoystick": true,
+			"MouseBtn": 0,
+			"XboxKey": 10
+		},
+		{
+			"Name": "Range",
+			"EventType": 5,
+			"InputType": 0,
+			"isMouse": true,
+			"isJoystick": true,
+			"MouseBtn": 1,
+			"XboxKey": 9
+		},
+		{
+			"Name": "Restart",
+			"EventType": 6,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": true,
+			"KeyBoardKey": 68,
+			"XboxKey": 4
+		},
+		{
+			"Name": "PauseGame",
+			"EventType": 9,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": true,
+			"KeyBoardKey": 41,
+			"XboxKey": 6
+		},
+		{
+			"Name": "OpenShop",
+			"EventType": 10,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": false,
+			"KeyBoardKey": 20,
+			"XboxKey": 0
+		},
+		
+		{
+			"Name": "LIGHT_A_DOWN",
+			"EventType": 11,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": false,
+			"KeyBoardKey": 47,
+			"XboxKey": 0
+		},
+		{
+			"Name": "LIGHT_A_UP",
+			"EventType": 12,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": false,
+			"KeyBoardKey": 48,
+			"XboxKey": 0
+		},
+		
+		{
+			"Name": "LIGHT_B_DOWN",
+			"EventType": 13,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": false,
+			"KeyBoardKey": 45,
+			"XboxKey": 0
+		},
+		{
+			"Name": "LIGHT_B_UP",
+			"EventType": 14,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": false,
+			"KeyBoardKey": 46,
+			"XboxKey": 0
+		},
+		{
+			"Name": "INCREMENT_LEVEL",
+			"EventType": 26,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": false,
+			"KeyBoardKey": 60,
+			"XboxKey": 0
+		},
+		{
+			"Name": "TOGGLE_LIGHTS",
+			"EventType": 15,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": false,
+			"KeyBoardKey": 61,
+			"XboxKey": 0
+		},
+		{
+			"Name": "TOGGLE_CURSOR",
+			"EventType": 16,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": false,
+			"KeyBoardKey": 63,
+			"XboxKey": 0
+		},
+		{
+			"Name": "LOAD_EDITOR",
+			"EventType": 27,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": false,
+			"KeyBoardKey": 66,
+			"XboxKey": 0
+		},
+		{
+			"Name": "TOGGLE_POST_PROCESSING",
+			"EventType": 17,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": false,
+			"KeyBoardKey": 64,
+			"XboxKey": 0
+		},
+		{
+			"Name": "TOGGLE_GOD_MODE",
+			"EventType": 24,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": false,
+			"KeyBoardKey": 65,
+			"XboxKey": 0
+		},
+		
+		{
+			"Name": "ExitLevel",
+			"EventType": 22,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": false,
+			"KeyBoardKey": 8,
+			"XboxKey": 0
+		},
+		{
+			"Name": "AddGoldenFeathers",
+			"EventType": 23,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": false,
+			"KeyBoardKey": 67,
+			"XboxKey": 0
+		},
+		{
+			"Name": "ScreenBypassLeftClick",
+			"EventType": 25,
+			"InputType": 0,
+			"isMouse": true,
+			"isJoystick": true,
+			"MouseBtn": 0,
+			"XboxKey": 10
+		},
+		{
+			"Name": "ScreenBypassRightClick",
+			"EventType": 25,
+			"InputType": 0,
+			"isMouse": true,
+			"isJoystick": false,
+			"MouseBtn": 1,
+			"XboxKey": 10
+		},
+		{
+			"Name": "ScreenBypassSpace",
+			"EventType": 25,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": true,
+			"KeyBoardKey": 44,
+			"XboxKey": 0
+		},
+		{
+			"Name": "ScreenBypassEnter",
+			"EventType": 25,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": true,
+			"KeyBoardKey": 40,
+			"XboxKey": 0
+		},
+		{
+			"Name": "ScreenBypassEscape",
+			"EventType": 25,
+			"InputType": 0,
+			"isMouse": false,
+			"isJoystick": true,
+			"KeyBoardKey": 41,
+			"XboxKey": 0
+		}
+	]
+}

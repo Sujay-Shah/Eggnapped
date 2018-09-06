@@ -1,0 +1,20 @@
+{
+	"GAME_OBJECTS": [],
+	"GAME_OBJECTS_OLD": [
+		{
+			"prefab": "P_LetterBoxCamera"
+		},
+		{
+			"prefab": "P_LetterBoxTop"
+		},
+		{
+			"prefab": "P_LetterBoxBottom"
+		},
+		{
+			"prefab": "P_LetterBoxLeft"
+		},
+		{
+			"prefab": "P_LetterBoxRight"
+		}
+	]
+}

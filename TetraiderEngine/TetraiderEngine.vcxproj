@@ -1,0 +1,504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\AI_EnemyBatReaction.cpp" />
+    <ClCompile Include="Source\AI_RangeAttack.cpp" />
+    <ClCompile Include="Source\AI_RatBossAttack.cpp" />
+    <ClCompile Include="Source\AI_RatBossEngage.cpp" />
+    <ClCompile Include="Source\AI_RatBossIdle.cpp" />
+    <ClCompile Include="Source\AI_RatBossReaction.cpp" />
+    <ClCompile Include="Source\AI_RatBossRetreat.cpp" />
+    <ClCompile Include="Source\AI_RockBossAttack.cpp" />
+    <ClCompile Include="Source\AI_RockBossEngage.cpp" />
+    <ClCompile Include="Source\AI_RockBossIdle.cpp" />
+    <ClCompile Include="Source\AI_RockBossReaction.cpp" />
+    <ClCompile Include="Source\AI_WalkTowardPlayerIdle.cpp" />
+    <ClCompile Include="Source\ApplyTinyOnDifficultyUp.cpp" />
+    <ClCompile Include="Source\FBOSprite.cpp" />
+    <ClCompile Include="Source\HillNodes.cpp" />
+    <ClCompile Include="Source\AI_BomberAttack.cpp" />
+    <ClCompile Include="Source\AI_BomberRetreat.cpp" />
+    <ClCompile Include="Source\AI_HitNRunAttack.cpp" />
+    <ClCompile Include="Source\AI_HitNRunEngage.cpp" />
+    <ClCompile Include="Source\AI_HitNRunRetreat.cpp" />
+    <ClCompile Include="Source\AI_Reaction.cpp" />
+    <ClCompile Include="Source\CutScene.cpp" />
+    <ClCompile Include="Source\Endpoints.cpp" />
+    <ClCompile Include="Source\Gate.cpp" />
+    <ClCompile Include="Source\GateTriggerBox.cpp" />
+    <ClCompile Include="Source\ImageRenderer.cpp" />
+    <ClCompile Include="Source\InGameCredits.cpp" />
+    <ClCompile Include="Source\LetterBox.cpp" />
+    <ClCompile Include="Source\ListSelector.cpp" />
+    <ClCompile Include="Source\NotEnoughGoldFeathers.cpp" />
+    <ClCompile Include="Source\ParticleEmitterResizer.cpp" />
+    <ClCompile Include="Source\PlayerStatsManager.cpp" />
+    <ClCompile Include="Source\PostProcessing.cpp" />
+    <ClCompile Include="Source\PowerUpButton.cpp" />
+    <ClCompile Include="Source\SelectableButton.cpp" />
+    <ClCompile Include="Source\Shop.cpp" />
+    <ClCompile Include="Source\Slider.cpp" />
+    <ClCompile Include="Source\Canvas.cpp" />
+    <ClCompile Include="Source\AI_DashingAttack.cpp" />
+    <ClCompile Include="Source\AI_DashingEngage.cpp" />
+    <ClCompile Include="Source\AI_DashingStunned.cpp" />
+    <ClCompile Include="Source\AI_IdleForDuration.cpp" />
+    <ClCompile Include="Source\AI_MoveToRandomPointInZone.cpp" />
+    <ClCompile Include="Source\AI_WalkTowardPlayerAttack.cpp" />
+    <ClCompile Include="Source\AI_WalkTowardPlayerEngage.cpp" />
+    <ClCompile Include="Source\External\Imgui\imgui.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\External\Imgui\imgui_demo.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\External\Imgui\imgui_draw.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\External\Imgui\imgui_impl_sdl_gl3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\FollowCamera.cpp" />
+    <ClCompile Include="Source\FrameBufferObject.cpp" />
+    <ClCompile Include="Source\ImguiManager.cpp" />
+    <ClCompile Include="Source\LevelEditor.cpp" />
+    <ClCompile Include="Source\LightBase.cpp" />
+    <ClCompile Include="Source\Microphone.cpp" />
+    <ClCompile Include="Source\Button.cpp" />
+    <ClCompile Include="Source\AI_Attack.cpp" />
+    <ClCompile Include="Source\AI_Engage.cpp" />
+    <ClCompile Include="Source\AI_Idle.cpp" />
+    <ClCompile Include="Source\AI_Retreat.cpp" />
+    <ClCompile Include="Source\AI_StateFactory.cpp" />
+    <ClCompile Include="Source\AOEAttack.cpp" />
+    <ClCompile Include="Source\Audio.cpp" />
+    <ClCompile Include="Source\Agent.cpp" />
+    <ClCompile Include="Source\Animation.cpp" />
+    <ClCompile Include="Source\Attack.cpp" />
+    <ClCompile Include="Source\AudioManager.cpp" />
+    <ClCompile Include="Source\Body.cpp" />
+    <ClCompile Include="Source\Camera.cpp" />
+    <ClCompile Include="Source\CamFollow.cpp" />
+    <ClCompile Include="Source\Collectible.cpp" />
+    <ClCompile Include="Source\ComponentFactory.cpp" />
+    <ClCompile Include="Source\Controller.cpp" />
+    <ClCompile Include="Source\DealDamageOnCollision.cpp" />
+    <ClCompile Include="Source\DebugLineMesh.cpp" />
+    <ClCompile Include="Source\DebugManager.cpp" />
+    <ClCompile Include="Source\DestroyOnHealthZero.cpp" />
+    <ClCompile Include="Source\EggCounter.cpp" />
+    <ClCompile Include="Source\Event.cpp" />
+    <ClCompile Include="Source\EventManager.cpp" />
+    <ClCompile Include="Source\FlashOnTakeDamage.cpp" />
+    <ClCompile Include="Source\FloorPlanGenerator.cpp" />
+    <ClCompile Include="Source\FollowCursor.cpp" />
+    <ClCompile Include="Source\FrameRateManager.cpp" />
+    <ClCompile Include="Source\GameConfig.cpp" />
+    <ClCompile Include="Source\GameObject.cpp" />
+    <ClCompile Include="Source\GameObjectManager.cpp" />
+    <ClCompile Include="Source\GameStateManager.cpp" />
+    <ClCompile Include="Source\Health.cpp" />
+    <ClCompile Include="Source\InputManager.cpp" />
+    <ClCompile Include="Source\JsonReader.cpp" />
+    <ClCompile Include="Source\LevelManager.cpp" />
+    <ClCompile Include="Source\LevelStatus.cpp" />
+    <ClCompile Include="Source\main.cpp" />
+    <ClCompile Include="Source\Math\Collisions.cpp" />
+    <ClCompile Include="Source\Math\LineSegment2D.cpp" />
+    <ClCompile Include="Source\Math\MathFunctions.cpp" />
+    <ClCompile Include="Source\Math\Matrix2x2.cpp" />
+    <ClCompile Include="Source\Math\Matrix3x3.cpp" />
+    <ClCompile Include="Source\Math\Matrix4x4.cpp" />
+    <ClCompile Include="Source\Math\Vector2D.cpp" />
+    <ClCompile Include="Source\Math\Vector3D.cpp" />
+    <ClCompile Include="Source\MeleeAttack.cpp" />
+    <ClCompile Include="Source\MemoryManager.cpp" />
+    <ClCompile Include="Source\Mesh.cpp" />
+    <ClCompile Include="Source\NPCController.cpp" />
+    <ClCompile Include="Source\ParticleEmitter.cpp" />
+    <ClCompile Include="Source\PhysicsManager.cpp" />
+    <ClCompile Include="Source\PointLight.cpp" />
+    <ClCompile Include="Source\Projectile.cpp" />
+    <ClCompile Include="Source\ProjectileSpawner.cpp" />
+    <ClCompile Include="Source\RangeAttack.cpp" />
+    <ClCompile Include="Source\RenderManager.cpp" />
+    <ClCompile Include="Source\ResourceManager.cpp" />
+    <ClCompile Include="Source\ScaleByHPStamina.cpp" />
+    <ClCompile Include="Source\ScreenWrap.cpp" />
+    <ClCompile Include="Source\ScriptedAnimation.cpp" />
+    <ClCompile Include="Source\Shader.cpp" />
+    <ClCompile Include="Source\ShaderProgram.cpp" />
+    <ClCompile Include="Source\SizeToScreen.cpp" />
+    <ClCompile Include="Source\SnapToCamera.cpp" />
+    <ClCompile Include="Source\Spawner.cpp" />
+    <ClCompile Include="Source\SpawnOnHealthZero.cpp" />
+    <ClCompile Include="Source\SplashScreen.cpp" />
+    <ClCompile Include="Source\Sprite.cpp" />
+    <ClCompile Include="Source\Stamina.cpp" />
+    <ClCompile Include="Source\Stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Source\StraightLineMovement.cpp" />
+    <ClCompile Include="Source\Subscriber.cpp" />
+    <ClCompile Include="Source\SubscriberTracker.cpp" />
+    <ClCompile Include="Source\TetraiderAPI.cpp" />
+    <ClCompile Include="Source\Text.cpp" />
+    <ClCompile Include="Source\TimeToLive.cpp" />
+    <ClCompile Include="Source\Transform.cpp" />
+    <ClCompile Include="Source\UICounter.cpp" />
+    <ClCompile Include="Source\WaveMovement.cpp" />
+    <ClCompile Include="Source\Weapon.cpp" />
+    <ClCompile Include="Source\WinMessage.cpp" />
+    <ClCompile Include="Source\UIManager.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="resource.h" />
+    <ClInclude Include="Source\InGameCredits.h" />
+    <ClInclude Include="Source\LetterBox.h" />
+    <ClInclude Include="Source\ListSelector.h" />
+    <ClInclude Include="Source\ParticleEmitterResizer.h" />
+    <ClInclude Include="Source\SelectableButton.h" />
+    <ClInclude Include="Source\SliderBallNames.h" />
+    <ClInclude Include="Source\AI_EnemyBatReaction.h" />
+    <ClInclude Include="Source\AI_RangeAttack.h" />
+    <ClInclude Include="Source\AI_RatBossAttack.h" />
+    <ClInclude Include="Source\AI_RatBossEngage.h" />
+    <ClInclude Include="Source\AI_RatBossIdle.h" />
+    <ClInclude Include="Source\AI_RatBossReaction.h" />
+    <ClInclude Include="Source\AI_RatBossRetreat.h" />
+    <ClInclude Include="Source\AI_RockBossAttack.h" />
+    <ClInclude Include="Source\AI_RockBossEngage.h" />
+    <ClInclude Include="Source\AI_RockBossIdle.h" />
+    <ClInclude Include="Source\AI_RockBossReaction.h" />
+    <ClInclude Include="Source\AI_WalkTowardPlayerIdle.h" />
+    <ClInclude Include="Source\ApplyTinyOnDifficultyUp.h" />
+    <ClInclude Include="Source\FBOSprite.h" />
+    <ClInclude Include="Source\HillNodes.h" />
+    <ClInclude Include="Source\AI_BomberAttack.h" />
+    <ClInclude Include="Source\AI_BomberRetreat.h" />
+    <ClInclude Include="Source\AI_HitNRunAttack.h" />
+    <ClInclude Include="Source\AI_HitNRunEngage.h" />
+    <ClInclude Include="Source\AI_HitNRunRetreat.h" />
+    <ClInclude Include="Source\AI_Reaction.h" />
+    <ClInclude Include="Source\CutScene.h" />
+    <ClInclude Include="Source\Endpoints.h" />
+    <ClInclude Include="Source\Gate.h" />
+    <ClInclude Include="Source\GateTriggerBox.h" />
+    <ClInclude Include="Source\ImageRenderer.h" />
+    <ClInclude Include="Source\NotEnoughGoldFeathers.h" />
+    <ClInclude Include="Source\PlayerStatsManager.h" />
+    <ClInclude Include="Source\PostProcessing.h" />
+    <ClInclude Include="Source\PowerUpButton.h" />
+    <ClInclude Include="Source\PowerUpData.h" />
+    <ClInclude Include="Source\RoomNodeData.h" />
+    <ClInclude Include="Source\Shop.h" />
+    <ClInclude Include="Source\Slider.h" />
+    <ClInclude Include="Source\CanvasTypeName.h" />
+    <ClInclude Include="Source\Canvas.h" />
+    <ClInclude Include="Source\AI_DashingAttack.h" />
+    <ClInclude Include="Source\AI_DashingEngage.h" />
+    <ClInclude Include="Source\AI_DashingStunned.h" />
+    <ClInclude Include="Source\AI_IdleForDuration.h" />
+    <ClInclude Include="Source\AI_MoveToRandomPointInZone.h" />
+    <ClInclude Include="Source\AI_WalkTowardPlayerAttack.h" />
+    <ClInclude Include="Source\AI_WalkTowardPlayerEngage.h" />
+    <ClInclude Include="Source\Color.h" />
+    <ClInclude Include="Source\Debug.h" />
+    <ClInclude Include="Source\External\Imgui\imconfig.h" />
+    <ClInclude Include="Source\External\Imgui\imgui.h" />
+    <ClInclude Include="Source\External\Imgui\imgui_impl_sdl_gl3.h" />
+    <ClInclude Include="Source\External\Imgui\imgui_internal.h" />
+    <ClInclude Include="Source\External\Imgui\stb_rect_pack.h" />
+    <ClInclude Include="Source\External\Imgui\stb_textedit.h" />
+    <ClInclude Include="Source\External\Imgui\stb_truetype.h" />
+    <ClInclude Include="Source\FollowCamera.h" />
+    <ClInclude Include="Source\FontInfo.h" />
+    <ClInclude Include="Source\FrameBufferObject.h" />
+    <ClInclude Include="Source\Global.h" />
+    <ClInclude Include="Source\ImguiManager.h" />
+    <ClInclude Include="Source\LevelEditor.h" />
+    <ClInclude Include="Source\LightBase.h" />
+    <ClInclude Include="Source\Microphone.h" />
+    <ClInclude Include="Source\Button.h" />
+    <ClInclude Include="Source\AI_Attack.h" />
+    <ClInclude Include="Source\AI_Engage.h" />
+    <ClInclude Include="Source\AI_Idle.h" />
+    <ClInclude Include="Source\AI_Retreat.h" />
+    <ClInclude Include="Source\AI_State.h" />
+    <ClInclude Include="Source\AI_StateFactory.h" />
+    <ClInclude Include="Source\AOEAttack.h" />
+    <ClInclude Include="Source\Audio.h" />
+    <ClInclude Include="Source\Agent.h" />
+    <ClInclude Include="Source\Animation.h" />
+    <ClInclude Include="Source\Attack.h" />
+    <ClInclude Include="Source\AudioManager.h" />
+    <ClInclude Include="Source\Body.h" />
+    <ClInclude Include="Source\Camera.h" />
+    <ClInclude Include="Source\CamFollow.h" />
+    <ClInclude Include="Source\Collectible.h" />
+    <ClInclude Include="Source\Component.h" />
+    <ClInclude Include="Source\ComponentFactory.h" />
+    <ClInclude Include="Source\ComponentTypes.h" />
+    <ClInclude Include="Source\ComponentTypesNames.h" />
+    <ClInclude Include="Source\Controller.h" />
+    <ClInclude Include="Source\DealDamageOnCollision.h" />
+    <ClInclude Include="Source\DebugLineMesh.h" />
+    <ClInclude Include="Source\DebugManager.h" />
+    <ClInclude Include="Source\DestroyOnHealthZero.h" />
+    <ClInclude Include="Source\EggCounter.h" />
+    <ClInclude Include="Source\Event.h" />
+    <ClInclude Include="Source\EventManager.h" />
+    <ClInclude Include="Source\EventNames.h" />
+    <ClInclude Include="Source\External\json.hpp" />
+    <ClInclude Include="Source\FlashOnTakeDamage.h" />
+    <ClInclude Include="Source\FloorPlanGenerator.h" />
+    <ClInclude Include="Source\FollowCursor.h" />
+    <ClInclude Include="Source\FrameRateManager.h" />
+    <ClInclude Include="Source\GameConfig.h" />
+    <ClInclude Include="Source\GameObject.h" />
+    <ClInclude Include="Source\GameObjectManager.h" />
+    <ClInclude Include="Source\GameObjectTags.h" />
+    <ClInclude Include="Source\GameStateManager.h" />
+    <ClInclude Include="Source\Health.h" />
+    <ClInclude Include="Source\InputManager.h" />
+    <ClInclude Include="Source\JsonReader.h" />
+    <ClInclude Include="Source\Layers.h" />
+    <ClInclude Include="Source\LevelManager.h" />
+    <ClInclude Include="Source\LevelStatus.h" />
+    <ClInclude Include="Source\Math\Collisions.h" />
+    <ClInclude Include="Source\Math\LineSegment2D.h" />
+    <ClInclude Include="Source\Math\MathDefs.h" />
+    <ClInclude Include="Source\Math\MathFunctions.h" />
+    <ClInclude Include="Source\Math\Matrix2x2.h" />
+    <ClInclude Include="Source\Math\Matrix3x3.h" />
+    <ClInclude Include="Source\Math\Matrix4x4.h" />
+    <ClInclude Include="Source\Math\Vector2D.h" />
+    <ClInclude Include="Source\Math\Vector3D.h" />
+    <ClInclude Include="Source\MeleeAttack.h" />
+    <ClInclude Include="Source\MemoryManager.h" />
+    <ClInclude Include="Source\Mesh.h" />
+    <ClInclude Include="Source\MyArray.h" />
+    <ClInclude Include="Source\NPCController.h" />
+    <ClInclude Include="Source\AI_StateTypes.h" />
+    <ClInclude Include="Source\AI_StateTypeNames.h" />
+    <ClInclude Include="Source\ParticleEmitter.h" />
+    <ClInclude Include="Source\PhysicsManager.h" />
+    <ClInclude Include="Source\PointLight.h" />
+    <ClInclude Include="Source\Projectile.h" />
+    <ClInclude Include="Source\ProjectileSpawner.h" />
+    <ClInclude Include="Source\RangeAttack.h" />
+    <ClInclude Include="Source\RenderManager.h" />
+    <ClInclude Include="Source\ResourceManager.h" />
+    <ClInclude Include="Source\ScaleByHPStamina.h" />
+    <ClInclude Include="Source\ScreenWrap.h" />
+    <ClInclude Include="Source\ScriptedAnimation.h" />
+    <ClInclude Include="Source\Shader.h" />
+    <ClInclude Include="Source\ShaderProgram.h" />
+    <ClInclude Include="Source\Shape.h" />
+    <ClInclude Include="Source\Singleton.h" />
+    <ClInclude Include="Source\SizeToScreen.h" />
+    <ClInclude Include="Source\SnapToCamera.h" />
+    <ClInclude Include="Source\Sorting.h" />
+    <ClInclude Include="Source\Spawner.h" />
+    <ClInclude Include="Source\SpawnOnHealthZero.h" />
+    <ClInclude Include="Source\SplashScreen.h" />
+    <ClInclude Include="Source\Sprite.h" />
+    <ClInclude Include="Source\Stamina.h" />
+    <ClInclude Include="Source\Stdafx.h" />
+    <ClInclude Include="Source\StraightLineMovement.h" />
+    <ClInclude Include="Source\SurfaceTextureBuffer.h" />
+    <ClInclude Include="Source\Subscriber.h" />
+    <ClInclude Include="Source\SubscriberTracker.h" />
+    <ClInclude Include="Source\TagNames.h" />
+    <ClInclude Include="Source\TetraiderAPI.h" />
+    <ClInclude Include="Source\Text.h" />
+    <ClInclude Include="Source\TimeToLive.h" />
+    <ClInclude Include="Source\Transform.h" />
+    <ClInclude Include="Source\UICounter.h" />
+    <ClInclude Include="Source\WaveMovement.h" />
+    <ClInclude Include="Source\Weapon.h" />
+    <ClInclude Include="Source\WinMessage.h" />
+    <ClInclude Include="Source\UIManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="TetraiderEngine.rc" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Eggnapped.ico" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{3D9758DE-D09F-499F-BF86-1ADC16174BA2}</ProjectGuid>
+    <RootNamespace>TetraiderEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.15063.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LibraryPath>$(ProjectDir)FMOD Studio API Windows\api\lowlevel\lib;$(ProjectDir)FMOD Studio API Windows\api\studio\lib;$(ProjectDir)SDL2\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)Source\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LibraryPath>$(ProjectDir)FMOD Studio API Windows\api\lowlevel\lib;$(ProjectDir)FMOD Studio API Windows\api\studio\lib;$(ProjectDir)SDL2\lib\x86;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)Source\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LibraryPath>$(ProjectDir)FMOD Studio API Windows\api\lowlevel\lib;$(ProjectDir)FMOD Studio API Windows\api\studio\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)Source\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LibraryPath>$(ProjectDir)FMOD Studio API Windows\api\lowlevel\lib;$(ProjectDir)FMOD Studio API Windows\api\studio\lib;$(LibraryPath)</LibraryPath>
+    <IncludePath>$(ProjectDir)Source\;$(IncludePath)</IncludePath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)GL\include;$(ProjectDir)SDL2\include;$(ProjectDir)FMOD Studio API Windows\api\lowlevel\inc;$(ProjectDir)FMOD Studio API Windows\api\studio\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <MinimalRebuild>false</MinimalRebuild>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ProjectDir)GL\lib;$(ProjectDir)SDL2\lib\x86;$(ProjectDir)FMOD Studio API Windows\api\lowlevel\lib;$(ProjectDir)FMOD Studio API Windows\api\studio\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fmodL_vc.lib;fmodstudioL_vc.lib;fmod_vc.lib;fmodstudio_vc.lib;opengl32.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;glew32.lib</AdditionalDependencies>
+      <SubSystem>NotSet</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)GL\include;$(ProjectDir)SDL2\include;$(ProjectDir)FMOD Studio API Windows\api\lowlevel\inc;$(ProjectDir)FMOD Studio API Windows\api\studio\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <CompileAs>CompileAsCpp</CompileAs>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <Link>
+      <AdditionalLibraryDirectories>$(ProjectDir)GL\lib;$(ProjectDir)SDL2\lib\x86;$(ProjectDir)FMOD Studio API Windows\api\lowlevel\lib;$(ProjectDir)FMOD Studio API Windows\api\studio\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fmodL_vc.lib;fmodstudioL_vc.lib;fmod_vc.lib;fmodstudio_vc.lib;opengl32.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;glew32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)GL\include;$(ProjectDir)SDL2\include;$(ProjectDir)FMOD Studio API Windows\api\lowlevel\inc;$(ProjectDir)FMOD Studio API Windows\api\studio\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Stdafx.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)GL\lib;$(ProjectDir)SDL2\lib\x86;$(ProjectDir)FMOD Studio API Windows\api\lowlevel\lib;$(ProjectDir)FMOD Studio API Windows\api\studio\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fmodL_vc.lib;fmodstudioL_vc.lib;fmod_vc.lib;fmodstudio_vc.lib;opengl32.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;glew32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>$(ProjectDir)GL\include;$(ProjectDir)SDL2\include;$(ProjectDir)FMOD Studio API Windows\api\lowlevel\inc;$(ProjectDir)FMOD Studio API Windows\api\studio\inc;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <PrecompiledHeaderFile>Stdafx.h</PrecompiledHeaderFile>
+      <MultiProcessorCompilation>false</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <AdditionalLibraryDirectories>$(ProjectDir)GL\lib;$(ProjectDir)SDL2\lib\x86;$(ProjectDir)FMOD Studio API Windows\api\lowlevel\lib;$(ProjectDir)FMOD Studio API Windows\api\studio\lib;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>fmodL_vc.lib;fmodstudioL_vc.lib;fmod_vc.lib;fmodstudio_vc.lib;opengl32.lib;SDL2.lib;SDL2main.lib;SDL2_image.lib;SDL2_ttf.lib;glew32.lib</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

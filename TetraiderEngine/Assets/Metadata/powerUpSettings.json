@@ -1,0 +1,95 @@
+{
+	"POWER_UP_SETTINGS": [
+		{
+			"categoryName": "Special",
+			"POWER_UPS": [
+				{
+					"name": "TripleShot",
+					"enumType": 2,
+					"maxLevel": 1,
+					"upgradeValue": -1,
+					"sprtieTexture": "T_FireThreeShots.png",
+					"cost": 10,
+					"description": "Fire 3 arrows at once"
+				},
+				{
+					"name": "FireArrows",
+					"enumType": 1,
+					"maxLevel": 1,
+					"upgradeValue": 1.5,
+					"sprtieTexture": "T_FireArrow.png",
+					"cost": 15,
+					"description": "Imbue arrows with fire for increased damage"
+				},
+				{
+					"name": "FireSword",
+					"enumType": 0,
+					"maxLevel": 1,
+					"upgradeValue": 1.5,
+					"sprtieTexture": "T_FireSword.png",
+					"cost": 15,
+					"description": "Ignite sword with fire for increased damage"
+				}
+			]
+		},
+		{
+			"categoryName": "Normal",
+			"POWER_UPS": [
+				{
+					"name": "HealthUpgrade",
+					"enumType": 3,
+					"maxLevel": 1,
+					"upgradeValue": 25,
+					"sprtieTexture": "T_Heart.png",
+					"cost": 0,
+					"description": "Increase max Health"
+				},
+				{
+					"name": "AmmoUpgrade",
+					"enumType": 6,
+					"maxLevel": 1,
+					"upgradeValue": 3,
+					"sprtieTexture": "T_ArrowPickUpIncrease.png",
+					"cost": 0,
+					"description": "+3 Arrows on pickup"
+				},
+				{
+					"name": "IncreaseHealthFromPickUp",
+					"enumType": 4,
+					"maxLevel": 1,
+					"upgradeValue": 20,
+					"sprtieTexture": "T_IncreaseHealthFromMeat.png",
+					"cost": 0,
+					"description": "Recover more health from meat"
+				},
+				{
+					"name": "IncreaseMeleeRange",
+					"enumType": 5,
+					"maxLevel": 1,
+					"upgradeValue": 1.25,
+					"sprtieTexture": "T_IncreaseMeleeRange.png",
+					"cost": 0,
+					"description": "Increased melee range"
+				},
+				{
+					"name": "IncreaseStaminaBar",
+					"enumType": 7,
+					"maxLevel": 1,
+					"upgradeValue": 25,
+					"sprtieTexture": "T_IncreaseStamina.png",
+					"cost": 0,
+					"description": "Increase max stamina"
+				},
+				{
+					"name": "IncreaseAgility",
+					"enumType": 8,
+					"maxLevel": 1,
+					"upgradeValue": 1.176,
+					"sprtieTexture": "T_IncreaseAgility.png",
+					"cost": 0,
+					"description": "Increased movement and attack speed"
+				}
+			]
+		}
+	]
+}

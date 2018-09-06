@@ -1,0 +1,6 @@
+{
+  "lineShader": {
+    "vertex": "lineShader.vert",
+    "fragment": "lineShader.frag"
+  }
+}
